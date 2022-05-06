@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Java Script Group Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/Home.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="Bikes.html">BIKES</a></li>
+        <li>
+          <a class="active" href="index.html">
+            <h1>The<span>Cyclopedia</span></h1>
+          </a>
+        </li>
+        <li><a href="Contactus.html">CONTACT US</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <div id="backgroundparticles">
+        <div class="loginwrapper">
+            <div class="form-collection">
+                <div class="card elevation-3 limit-width log-in-card below turned">
+                    <form id="loginForm">
+                  <div class="card-body">
+                    <div class="input-group email">
+                      <input type="text" id="Email" name="Email" placeholder="Email"/>
+                    </div>
+                    <div class="input-group password">
+                      <input type="password" id="Password" name="Password" placeholder="Password"/>
+                    </div>
+                    <button onclick="ToggleForms()" type="button" class="box-btn">Not a Member ? Register</button>
+                  </div>
+                  <div class="card-footer">
+                    <button class="login-btn" type="button" onclick="login()">Log in</button>
+                  </div>
+                </form>
+                </div>
+            
+                <div class="card elevation-2 limit-width sign-up-card above">
+                    <form id="signupForm">
+                  <div class="card-body">
+                    <div class="input-group email">
+                      <input type="email" id="signUpEmail" name="signUpEmail" placeholder="Email"/>
+                    </div>
+                    <div class="input-group password">
+                      <input type="password" id="signUpPassword" name="signUpPassword" placeholder="Password"/>
+                    </div>
+                    <div class="input-group password">
+                        <input type="password" id="signUpConfirmPassword" name="signUpConfirmPassword" placeholder="Confirm Password"/>
+                      </div>
+                    <button onclick="ToggleForms()"  type="button"  class="box-btn">Already a Member ? Login</button>
+                  </div>
+                
+                  <div class="card-footer">
+                    <button type="button" onclick="signUp()" class="signup-btn">Sign Up</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>The<span>Cyclopedia</span></h3>
+        <p class="footer-links">
+          <a href="#">Home</a> · <a href="#">Bikes</a> ·
+          <a href="#">Frame & More</a> ·
+          <a href="#">Gallery</a>
+        </p>
+        <p class="footer-company-name">The Cyclopedia. &copy; 2021</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>05 Briercrest Ave</span> Ontario, Canada</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 555555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:TheCyclopedia.com">TheCyclopedia.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span> Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s,
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
